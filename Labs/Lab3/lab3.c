@@ -23,6 +23,10 @@ int * newBoard() {
         board[i] = 0;
     }
 
+    // Set the pointer at index 2 to point to a float value
+    float *scorePtr = (float *)&board[2];
+    *scorePtr = 0.0f; // Initialize the float value to 0.0
+
     return board;
 }
 
